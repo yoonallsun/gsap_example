@@ -1,0 +1,35 @@
+/* Goole Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
+
+/* 전체 요소 간격 없애기 */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; /* 요소의 선과 패딩을 안쪽으로 생기게 하기 */
+}
+
+/* 기본 글자체 syne로 설정 */
+body{
+  font-family: 'Syne', sans-serif;
+  background:#0a0a0a;
+  font-weight:800;
+}
+
+/* a 링크에 밑줄 없애고 색상 상속 받도록 조정 */
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+/* 리스트 불릿 마크 제거 */
+ol, ul{
+  list-style: none;
+}
+
+/* ----- 지울거임 ----- */
+.clip{
+  width:300px;
+  height:300px;
+  clip-path: polygon(49% 42%, 100% 0, 82% 100%, 18% 100%, 0 0);
+  background:#ddd;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title"></title>
+
+  <!-- 초기화 CSS 파일 링크 : CSS 파일 중 가장 위에 위치시킨다 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 커스텀 CSS 파일 링크 -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <div class="wrapper" id="luxy">
+    <header class="header">
+      <h1 class="title" data-splitting>
+        <span class="title-text-up">Parallax Effect</span><br>
+        <span class="title-stroke">on gsap</span>
+      </h1>
+      <div class="header-img">
+        <img src="img/1.jpg" alt="1">
+      </div>
+
+      <div class="header-marq">
+        <div class="header-marq-wrapper">
+          <span class="header-marq-text">You Are Not Alone
+            <span class="header-marq-star"><img src="img/star.svg" alt=""></span>
+          </span>
+          <span class="header-marq-text">You Are Not Alone
+            <span class="header-marq-star"><img src="img/star.svg" alt=""></span>
+          </span>
+          <span class="header-marq-text">You Are Not Alone
+            <span class="header-marq-star"><img src="img/star.svg" alt=""></span>
+          </span>
+          <span class="header-marq-text">You Are Not Alone
+            <span class="header-marq-star"><img src="img/star.svg" alt=""></span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- main 태그는 저네 페이지 섹션을 모으는 용도로 종종 사용된다.사용 안하는 경우도 많다. -->
+  <main class="main">
+    <section class="about">
+      <div class="about-wrapper">
+        <div class="about-img">
+          <img src="img/2.jpg" alt="">
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">abo
+            <span class="title-stroke">ut</span>
+            <span class="title-square"></span>
+          </h2>
+          <p class="about-para">Fugiat Lorem duis consequat adipisicing amet elit aliqua officia pariatur. Amet aliqua nulla laborum cupidatat dolore commodo elit magna mollit. Magna sit amet esse adipisicing aute est culpa cupidatat anim do voluptate.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <div class="smaple"></div>
+  </div>
+
+  <!-- GSAP CDN 파일 링크 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+  <!-- luxy Plugin File 링크 -->
+  <script src="js/luxy.js"></script>
+
+  <!-- Splitting Plugin CDN 링크 -->
+  <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
+
+  <!-- 커스텀 스크립트 파일 링크 -->
+  <script src="js/custom.js"></script>
+  <script>
+    Splitting();
+  </script>
+</body>
+</html>
