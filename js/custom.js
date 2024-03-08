@@ -130,6 +130,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   aboutAnimation();
 
+  function benefitAnimation() {
+    const benefits_nums = gsap.utils.toArray('.benefits_num');
+    console.log(benefits_nums);
+
+    benefits_nums.forEach((num) => {
+      const data_speed = num.getAttribute('data-speed');
+      console.log(data_speed);
+    });
+  }
+
+  benefitAnimation();
+
   const wWidth = window.outerWidth;
 
   if (wWidth > 1300) {
