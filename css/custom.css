@@ -1,3 +1,7 @@
+body{
+  height: 5000px;
+}
+
 /* Header Style Codes */
 .header{
   width:100%;
@@ -151,6 +155,11 @@ body{
   text-align: left;
   position: relative;
   margin-top: 100px;
+  color: #fff;
+}
+
+.section-title.text-center{
+  text-align: center;
 }
 
 .title-square{
